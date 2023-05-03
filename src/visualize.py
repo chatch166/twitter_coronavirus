@@ -49,7 +49,7 @@ plt.ylabel("Tweet Volume")
 plt.rcParams['font.family'] = 'Arial'
 
 # save plot
-plt.savefig("covidcountryeng.png")
+plt.savefig("covidcountrykor.png")
 
 # display plot
 plt.show()
