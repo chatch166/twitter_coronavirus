@@ -67,11 +67,11 @@ we get the use of #코로나바이러스 by country
 
 Not content to rest on my laurels, I also made an `alternative_reduce.py` file that takes one or more `--keys` as arguments and produces a line graph of those hashtags' use over every day in 2020. Running the command 
 ```
-$ python3 ./src/alternative_reduce.py --keys '#cough' '#sneeze'
+$ python3 ./src/alternative_reduce.py --keys '#coronavirus' '#corona'
 ```
 
 we get 
 
-![cough v. sneeze in different countries](cough_sneeze.png)
+![#coronavirus vs. #corona time series in 2020](coronavirus_corona.png)
 
 And that's all! Thanks for reading through. 
