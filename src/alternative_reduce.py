@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
-# command line args
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--keys',nargs='+',required=True)
 args = parser.parse_args()
 
-# imports
 import os
 import glob
 import json
@@ -27,6 +25,7 @@ for path in glob.glob('outputs/geoTwitter*.lang'):
         total[date] = tmp
 
 new_dict = {}
+
 for day in total.keys():
     for key in args.keys:
         if key not in new_dict:
@@ -49,12 +48,13 @@ for key in new_dict:
 ax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%y-%m-%d'))
 
+# Add title and axis labels
 ax.set_xlabel('Date')
-ax.set_ylabel('Volume of Tweets')
+ax.set_ylabel('Tweet Volume')
 ax.legend()
 
 tags = []
 for key in args.keys:
     tags.append(key[1:])
 
-plt.savefig('altreduce2.png')
+plt.savefig('_'.join(tags)+'.png')
