@@ -4,7 +4,7 @@ For this project, I analyzed tweets related to COVID-19 in the the 2020 using th
 
 **Background**
 
-The dataset contained all geotagged tweets (1.1 billion) sent in the year 2020, and was given to me by my professor @mikeizbicki. Although many more tweets were sent in 2020 that weren't geotagged, only using the geotagged tweets allows for analysis by country, which is interesting. 
+The dataset contained all geotagged tweets (1.1 billion) sent in the year 2020, and was given to me by my professor [Mike Izbicki](https://github.com/mikeizbicki). Although many more tweets were sent in 2020 that weren't geotagged, only using the geotagged tweets allows for analysis by country, which is interesting. 
 
 **Analysis**
 
@@ -37,7 +37,7 @@ python produces
 
 ![#coronavirus by different languages](covidlangeng.png) 
 
-which show the use of the hashtag #coronavirus in different languages. 
+which shows the use of the hashtag #coronavirus in different languages. 
 
 Here's the same hashtag, but by country, produced by running this command:
 

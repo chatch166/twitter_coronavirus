@@ -23,9 +23,7 @@ for path in glob.glob('outputs/geoTwitter*.lang'):
         filename = os.path.basename(path)
         date = filename[10:18]
         total[date] = tmp
-
 new_dict = {}
-
 for day in total.keys():
     for key in args.keys:
         if key not in new_dict:
@@ -37,7 +35,6 @@ for day in total.keys():
                 new_dict[key][day] += lang
         except KeyError:
             pass
-
 fig, ax = plt.subplots()
 for key in new_dict:
     dates = sorted(new_dict[key].keys())
